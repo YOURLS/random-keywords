@@ -24,6 +24,11 @@ global $ozh_random_keyword;
 /* Length of random keyword */
 $ozh_random_keyword['length'] = 5;
 
+## these can be used to either define a custom charset 
+## _or_ use one of the prefined charset #function yourls_rnd_string
+$ozh_random_keyword['charset']  = '';
+$ozh_random_keyword['charset_type']  = 0;
+
 /*
 * DO NOT EDIT FARTHER
 */
@@ -32,7 +37,9 @@ $ozh_random_keyword['length'] = 5;
 yourls_add_filter( 'random_keyword', 'ozh_random_keyword' );
 function ozh_random_keyword() {
         global $ozh_random_keyword;
-        return yourls_rnd_string( $ozh_random_keyword['length'] );
+        return yourls_rnd_string( $ozh_random_keyword['length'], 
+                $ozh_random_keyword['charset_type'], 
+                $ozh_random_keyword['charset'] );
 }
 
 // Don't increment sequential keyword tracker
