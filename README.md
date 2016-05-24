@@ -1,4 +1,4 @@
-#Simple Random Charset
+#Simple Random Keywords & Charset
 
 
 Plugin for [YOURLS](http://yourls.org)
