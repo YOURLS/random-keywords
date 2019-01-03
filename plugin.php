@@ -35,7 +35,7 @@ function ozh_random_keyword() {
         $possible = yourls_get_shorturl_charset() ;
         $str='';
         while (strlen($str) < $ozh_random_keyword['length']) {
-                $str .= substr($possible, rand(0,strlen($possible)),1);
+                $str .= substr($possible, rand(0,strlen($possible)-1),1);
         }
         return $str;
 }
