@@ -1,7 +1,7 @@
 Random Keywords
 ===============
 
-Plugin for [YOURLS](http://yourls.org) `1.5+`. 
+Plugin for [YOURLS](http://yourls.org) `1.5` to `1.7.3` (this plugin is bundled with YOURLS 1.7.4+)
 
 Description
 -----------
